@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    margin-top:10px ;
+}
+
+.card{ 
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    box-shadow:
+    0.9px 0.9px 10px rgba(0, 0, 0, 0.035),
+    7px 7px 80px rgba(0, 0, 0, 0.07);
+  
+
+}
+
+.red{
+    background-color: rgb(141, 44, 44);
+}
+
+.blue{
+    background-color: rgb(44, 83, 141);
+}
+
+.green{
+    background-color: rgb(44, 141, 68);
+}

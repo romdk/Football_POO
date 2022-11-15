@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Football</title>
 </head>
 <body>
@@ -42,33 +42,28 @@
     $carriere5 = new Carriere ($joueur4,$equipe3,2013);
     $carriere6 = new Carriere ($joueur2,$equipe4,2018);
 
-    echo $pays1->afficherEquipes();
-    echo '<br><br>';
-    echo $pays2->afficherEquipes();
-    echo '<br><br>';
-    echo $pays3->afficherEquipes();
-    echo '<br><br>';
-    echo $pays4->afficherEquipes();
-    echo '<br><br>';
-    echo $equipe1->afficherJoueurs();
-    echo '<br><br>';
-    echo $equipe2->afficherJoueurs();
-    echo '<br><br>';
-    echo $equipe3->afficherJoueurs();
-    echo '<br><br>';
-    echo $equipe4->afficherJoueurs();
-    echo '<br><br>';
-    echo $equipe5->afficherJoueurs();
-    echo '<br><br>';
-    echo $equipe6->afficherJoueurs();
-    echo '<br><br>';
-    echo $joueur1->afficherCarriere();
-    echo '<br><br>';
-    echo $joueur2->afficherCarriere();
-    echo '<br><br>';
-    echo $joueur3->afficherCarriere();
-    echo '<br><br>';
-    echo $joueur4->afficherCarriere();
+    echo'<div class="container">', 
+     '<div class="card red">'.$pays1->afficherEquipes().'</div>',
+     '<div class="card red">'.$pays2->afficherEquipes().'</div>',
+     '<div class="card red">'.$pays3->afficherEquipes().'</div>',
+     '<div class="card red">'.$pays4->afficherEquipes().'</div>',
+     '</div>',
+
+    '<div class="container">', 
+     '<div class="card green">'.$equipe1->afficherJoueurs().'</div>',
+     '<div class="card green">'.$equipe2->afficherJoueurs().'</div>',
+     '<div class="card green">'.$equipe3->afficherJoueurs().'</div>',
+     '<div class="card green">'.$equipe4->afficherJoueurs().'</div>',
+     '<div class="card green">'.$equipe5->afficherJoueurs().'</div>',
+     '<div class="card green">'.$equipe6->afficherJoueurs().'</div>',
+     '</div>',
+
+    '<div class="container">', 
+     '<div class="card blue">'.$joueur1->afficherCarriere().'</div>',
+     '<div class="card blue">'.$joueur2->afficherCarriere().'</div>',
+     '<div class="card blue">'.$joueur3->afficherCarriere().'</div>',
+     '<div class="card blue">'.$joueur4->afficherCarriere().'</div>',
+     '</div>';
 ?>
     
 </body>
