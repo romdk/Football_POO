@@ -47,10 +47,12 @@ class Equipe{
     }
 
     public function afficherJoueurs(){
+        usort($this->_carriere,function($a,$b){return $a->getDateEquipe() < $b->getDateEquipe();});
         $result = $this->_nom.'<br>';
         foreach($this->_carriere as $carriere){
             $result .= $carriere->getJoueur() ." (".$carriere->getDateEquipe().")<br>";
-        } return $result;
+        } 
+        return $result;
     }
 }
 ?>

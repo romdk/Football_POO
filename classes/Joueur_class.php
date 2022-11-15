@@ -62,6 +62,7 @@ class Joueur{
     }
 
     public function afficherCarriere(){
+        usort($this->_carriere,function($a,$b){return $a->getDateEquipe() < $b->getDateEquipe();});
         $result = $this->getPrenom().' '.$this->getNom().'<br>'.$this->getPays().' - '.$this->afficherAge().' ans <br>';
         foreach ($this->_carriere as $carriere){
             $result .= $carriere->getEquipe().' ('.$carriere->getDateEquipe().')'."<br>";            
