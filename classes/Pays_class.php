@@ -22,7 +22,7 @@ class Pays{
 
     public function afficherEquipes(){
         usort($this->_equipes,function($a,$b){return $a->getNom() > $b->getNom();});
-        $result = "Equipes de ".$this->_nom."<br>";
+        $result = "Equipes en ".$this->_nom."<br>";
         foreach ($this->_equipes as $equipe){
             $result .= $equipe->getNom()."<br>";
         } return $result;
